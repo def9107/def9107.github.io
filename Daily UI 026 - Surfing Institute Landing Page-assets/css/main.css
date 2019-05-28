@@ -1,0 +1,370 @@
+/*@font-family: 'Lato', sans-serif;
+@font-family: 'Playfair Display', serif;*/
+body {
+	font-family: 'Lato', sans-serif;
+	color: #000;
+}
+
+.container {
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.nav-wrapper {
+	padding-top: 92px;
+	width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 220px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.nav-item {
+  font-size: 15px;
+  font-weight: 500;
+  color: #aaa;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  margin-right: 70px;
+  text-decoration: none;
+}
+
+.nav-item:last-child {
+	margin-right: 0;
+}
+
+.nav-item:active,
+.nav-item:hover,
+.nav-item:focus {
+	color: #111;
+	text-decoration: none;
+	font-weight: 600;
+  transition: all 0.2s ease-in;
+}
+
+.header-wrapper {
+	width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+  margin-bottom: 230px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 205px;
+  align-items: flex-start;
+}
+
+.header-title {
+  font-size: 70px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.57px;
+  text-align: center;
+}
+
+.header-description {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.06px;
+  color: rgb(153, 153, 153);
+  line-height: 1.8;
+  text-align: center;
+}
+
+.header-description p {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.reviews {
+	width: 260px;
+  margin-right: 20px;
+}
+
+.reviews-title {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.29px;
+  margin-bottom: 45px;
+}
+
+.review-item {
+	position: relative;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding-bottom: 15px;
+}
+
+.review-item::before {
+	content: "";
+	width: 36px;
+	height: 29px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: -18px;
+	z-index: -1;
+	background-image: url('../img/icons/icon.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.review-item-text {
+	font-size: 16px;
+  color: rgb(153, 153, 153);
+  line-height: 1.9;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.review-item-author {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 1.9;
+  font-weight: 700;
+}
+
+.video {
+	width: 280px;
+}
+
+.video-title {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.29px;
+  margin-bottom: 25px;
+}
+
+.video-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 36px;
+}
+
+.play-icon {
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.play-icon::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -4px;
+  margin-top: -5.5px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 5.5px solid transparent;
+  border-left: 8px solid #000;
+  border-bottom: 5.5px solid transparent;
+}
+
+.video-item .play-icon {
+  position: absolute;
+  left: -10px;
+  bottom: -15px;
+}
+
+.video-center {
+  position: relative;
+}
+
+.video-center .play-icon {
+  position: absolute;
+  left: 24px;
+  bottom: 32px;
+}
+
+.header-1 {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  color: rgb(0, 0, 0);
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.41px;
+  margin-top: 0;
+  margin-bottom: 85px;
+  font-weight: 500;
+}
+
+.instructors-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 255px;
+}
+
+.instructor {
+  margin-bottom: 30px;
+}
+
+.instructor-photo {
+  margin-bottom: 35px;
+
+}
+
+.instructor-name {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.28px;
+  margin-bottom: 10px;
+}
+
+.instructor-students {
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  color: rgb(42, 183, 56);
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.14px;
+}
+
+.blog-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 190px;
+}
+
+.blog-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.blog-item:last-child {
+  margin-bottom: 250px;
+}
+
+.blog-item-content {
+  width: 450px;
+}
+
+.blog-item-header {
+  font-family: "Playfair Display", serif;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-style: italic;
+  letter-spacing: 0.33px;
+  margin-bottom: 25px;
+}
+
+.blog-item-desc {
+  font-size: 16px;
+  color: rgb(68, 68, 68);
+  line-height: 1.9;
+  letter-spacing: 0.06px;
+  margin-bottom: 50px;
+}
+
+.blog-item-readmore {
+  height: 52px;
+  border: 1px solid #e5e5e5;
+  font-size: 16px;
+  color: #000;
+  padding: 16px 30px 0;
+  line-height: 1;
+  letter-spacing: 0.06px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.blog-item-readmore:hover {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.text-center .header-1 {
+  margin-bottom: 70px;
+}
+
+.text-center {
+  margin-bottom: 145px;
+}
+
+.btn {
+  display: inline-block;
+  height: 55px;
+  line-height: 1;
+  font-weight: 500;
+  padding: 18px 45px 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(65, 71, 91);
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.footer {
+  border-top: 1px solid #f2ede7;
+  padding: 48px 0 38px;
+}
+
+.footer-container {
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer-copyright {
+
+}
+
+.footer-copyright-title {
+  font-family: "Playfair Display", serif;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;  
+}
+
+.footer-copyright-text {
+  font-size: 14px;
+  color: rgb(159, 159, 159);
+  line-height: 2;
+  font-weight: 400;
+}
+
+.footer-designedby {
+  font-size: 14px;
+  color: rgb(159, 159, 159);
+  line-height: 2.5;
+  font-weight: 400;
+}
+
+.footer-designedby strong {
+  color: #000;
+  font-weight: 600;
+}
+

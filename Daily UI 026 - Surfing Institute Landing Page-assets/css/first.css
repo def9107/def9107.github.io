@@ -1,0 +1,6 @@
+.section {
+  background-color: #fff;
+}
+.section:hover {
+  background-color: #ffa;
+}
