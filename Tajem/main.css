@@ -1,0 +1,589 @@
+body {
+	margin: 0;
+	font-family: "Roboto Black", sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	min-width: 960px;
+	color: #f4f4f6;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	min-height: 600px;
+	width: 100%;
+
+}
+
+/*-----контейнер-центровщик*/
+.container {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  width: 80%;
+	margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*-----параметры наложения фиолетового цвета*/
+.overlay {
+	background: linear-gradient(90deg, rgba(14,8,53,.85), rgba(43,25,86,.85));
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.btn {
+	display: inline-block;
+	min-width: 120px;
+	color: #00e0d0;
+	border: 1px solid #00e0d0;
+	padding: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+	text-transform: uppercase;
+	background-color: transparent;
+	text-align: center;
+}
+
+.btn:hover {
+  filter: drop-shadow(0 0 1px #00e0d0);
+	cursor: pointer;
+}
+
+.btn:active {
+	background-color: rgba(0, 224, 208, 0.1);
+}
+
+/*разделитель после заголовка*/
+.title {
+	margin-top: 2em;
+	margin-bottom: 3em;
+	position: relative;
+}
+
+.title::after {
+	position: absolute;
+	content: "";
+	bottom: -1em;
+	right: 46%;
+	width: 8%;
+	height: 0;
+	border-bottom: 1px solid #c6c4c9;
+}
+
+.text {
+	width: 50%;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+/*---------------------------------------------стили шапки*/
+header {
+  width: 100%;
+  background: url("images/bgheader.jpg") #3a315c no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.mainlogo {
+  width: 130px;
+  height: 50px;
+}
+
+.mainlogo:hover {
+  filter: drop-shadow(0 0 2px #00e0d0);
+}
+
+/*-----навигационное меню*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-weight: bolder;
+  font-size: 13px;
+  width: 70%;
+}
+
+nav a {
+  margin-left: 10px;
+}
+
+nav a:hover {
+  filter: drop-shadow(0 0 2px #00e0d0);
+}
+
+/*-------текст в шапке*/
+header .title {
+	font-family: 'Playfair Display', serif;
+	font-size: 32px;
+	line-height: 1.3em;
+}
+
+header .text .title::after {
+	border-color: #00e0d0;
+}
+
+/*------------------------------------------блок контент about us*/
+#about {
+	display: flex;
+	flex-direction: row;
+  justify-content: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.coloredlogo {
+	margin: 20px 80px 20px 80px;
+}
+
+/*------текст блока контент*/
+.text-about {
+	font-family: "Roboto Light", sans-serif;
+	color: #413d4b;
+}
+
+/*--------блок видео*/
+.about-video {
+  width: 100%;
+	min-height: 550px;
+	background: url("images/bgcontentvideo.jpg") #3a315c no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-video .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	min-height: 550px;
+	position: absolute;
+}
+
+.btn-play-video {
+	display: block;
+  width: 250px;
+	font-size: 16px;
+  text-align: center;
+}
+
+.btn-play-video img {
+	width: 100px;
+	height: 100px;
+
+}
+
+.btn-play-video:hover {
+  filter: drop-shadow(0 0 2px #00e0d0);
+	cursor: pointer;
+}
+
+video {
+	display: none;
+}
+
+a:active {
+
+}
+
+
+/*--------------------блок expertise*/
+#expertise {
+	max-width: 1020px;
+	text-align: center;
+	color: #413d4b;
+}
+
+/*стили для блока с преимуществами*/
+#expertise .items {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+
+.item {
+	flex-basis: 300px;
+	text-align: center;
+	padding: 15px; 
+}
+
+.item h3 {
+	text-transform: uppercase;
+}
+
+
+/*---------------блок team*/
+.team {
+  width: 100%;
+  background: url("images/bgteam.jpg") #3a315c no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.team p {
+	opacity: 0.7;
+}
+
+.block-team {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.person {
+	flex-basis: 300px;
+	text-align: center;
+	border-bottom: 1px solid #c6c4c9;
+}
+
+.person img {
+	width: 100%;
+	height: auto;
+}
+
+.team .bottom {
+	margin: 20px;
+}
+
+/*---------------блок works*/
+.works {
+	text-align: center;
+	color: #413d4b;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+}
+
+.works-title {
+	width: 75%;
+	margin: 30px auto;
+	vertical-align: middle;
+	height: 20px;
+}
+
+.works-title h2 {
+	float: left;
+	margin: 0;
+}
+
+.works-title a {
+	position: relative;
+	color: #413d4b;
+	float: right;
+}
+
+.works-title a::after {
+	content: ">";
+	position: absolute;
+	font-size: 15px;
+	top: 1px;
+	right: -14px;
+}
+
+.blok-works {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+}
+
+.works img {
+	flex-basis: 280px;
+	flex-grow: 1;
+}
+
+/*--------------------------блок people-say*/
+.people-say {
+  width: 100%;
+  background: url("images/bgtestimonials.jpg") #3a315c no-repeat;
+  background-size: cover;
+}
+
+.people-say .text::before {
+	content: '“';
+	display: table;
+	position: absolute;
+	top: -5%;
+	left: 45%;
+	font-size: 100px;
+}
+
+/*-----слайдер с фото клиентов*/
+.slider {
+	text-align: center;
+	position: relative;
+	/*Instead of height we will use padding*/
+	padding-top: 580px; /*That helps bring the labels down*/	
+	margin: 30px auto;
+}
+
+
+/*Last thing remaining is to add transitions*/
+.slider>img {
+	position: absolute;
+	left: 23%; top: 35%;
+	transition: all 0.5s;
+	border-radius: 50%;
+}
+
+/*стили и позиционирование комментария*/
+.slider label .text {
+	position: absolute;
+	width: 100%;
+	left: 0; top: 0;
+	font-family: 'Playfair Display Regular', serif;
+	font-size: 16px;
+	line-height: 26px;
+	visibility: hidden;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	/*Lets add some spacing for the thumbnails*/
+	margin: 20px 0 0 20px;
+	float: left;
+	cursor: pointer;
+	transition: all 0.3s;	
+	/*Default style = low opacity*/
+	opacity: 0.6;
+}
+
+.slider label img {
+	display: block;
+	border-radius: 50%;
+}
+
+/*делаем видимым комментарий выбранного клиента*/
+.slider input[name='slide_switch']:checked+label .text {
+	visibility: visible;
+}
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img,
+.slider input[name='slide_switch']:checked+label+img+.text {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/*--------------------------блок contact*/
+#contact {
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+	color: #413d4b;
+}
+
+#contact h2 {
+		margin-bottom: 30px; 
+}
+
+.contact-form {
+	 min-width: 50%;
+}
+
+.contact-form input:not([type="submit"]),
+textarea  {
+	display: block;
+	width: 75%;
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contact-form textarea {
+	min-height: 200px;
+}
+
+.clients {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.clients h2 {
+	width: 100%;
+}
+
+.clients img {
+	display: inline;
+}
+
+.clients-item {
+	width: 160px;
+	height: 75px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+/*--------------------блок footer*/
+ footer {
+  width: 100%;
+  background: url("images/bgfooter.jpg") #3a315c no-repeat;
+  background-size: cover;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.footer-top>div {
+	width: 30%;
+}
+
+.contact-us form {
+	height: 45px;
+	margin-bottom: 20px;
+}
+
+input.subscribe {
+	box-sizing: border-box;
+	width: 70%;
+	height: 100%;
+	border: 1px solid white;
+	text-align: center;
+	vertical-align: top;
+	background-color: transparent;
+	color: white;
+}
+
+input.subscribe::placeholder {
+	color: rgba(256, 256, 256, 0.5);
+}
+
+input.subscribe-go {
+	width: 60px;
+	height: 100%;
+	background: url("images/footer/paper.png") rgba(256, 256, 256, 0.5) no-repeat 50%;
+	border: 1px solid rgba(256, 256, 256, 0.5);
+}
+
+input.subscribe-go:hover {
+	cursor: pointer;
+	background-color: rgba(256, 256, 256, 0.7);
+}
+
+input.subscribe-go:active {
+	filter: invert(0.8);
+}
+
+.social a {
+	display: inline-block;
+	width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  background-image: url("images/footer/socialsprite.png");
+  border-radius: 50%;
+}
+
+.social a:hover {
+	background-color: rgba(256, 256, 256, 0.3);
+}
+
+.social a:active {
+		filter: invert(0.3);
+}
+
+.fb {
+	background-position: -5px -5px;
+}
+
+.tw {
+	background-position: -5px -50px;
+}
+
+.db {
+	background-position: -5px -95px;
+}
+
+.insta {
+	background-position: -5px -140px;
+}
+
+.gplus {
+	background-position: -5px -185px;
+}
+
+.youtube {
+	background-position: -5px -230px;
+}
+
+.find-us p {
+	position: relative;
+	margin-left: 30px;
+}
+
+.find-us .address::before {
+	content: '';
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: -25px;
+	background: url("images/footer/big.png") no-repeat;
+}
+
+.find-us .phone::before {
+	content: '';
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: -25px;
+	background: url("images/footer/phone.png") no-repeat;
+}
+
+.footer-bottom {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline; 
+}
+
+.footer-menu a {
+	margin-right: 10px;
+	font-weight: bolder;
+}
+
+.footer-menu a:hover {
+  filter: drop-shadow(0 0 2px #fff);
+}
+
