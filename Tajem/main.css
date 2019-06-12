@@ -145,12 +145,13 @@ header .text .title::after {
 }
 
 /*------------------------------------------блок контент about us*/
-#about {
-	display: flex;
-	flex-direction: row;
-  justify-content: center;
+.about {
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
+
+.about .container {
+	flex-direction: row;
 }
 
 .coloredlogo {
@@ -200,10 +201,6 @@ header .text .title::after {
 
 video {
 	display: none;
-}
-
-a:active {
-
 }
 
 
