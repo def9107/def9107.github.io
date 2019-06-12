@@ -3,9 +3,9 @@ body {
 	font-family: "Roboto Black", sans-serif;
 	font-size: 14px;
 	line-height: 1.6em;
-	min-width: 960px;
 	color: #f4f4f6;
 	height: 100%;
+	min-width: 700px;
 }
 
 main {
@@ -21,7 +21,7 @@ main {
 	display: flex;
 	flex-direction: column;
   align-items: center;
-  width: 80%;
+	width: 80%;
 	margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -39,7 +39,7 @@ a {
 	color: #fff;
 }
 
-h2 {
+.title {
 	font-family: 'Playfair Display', serif;
 	font-size: 22px;
 	font-weight: bold;
@@ -69,13 +69,13 @@ h2 {
 }
 
 /*разделитель после заголовка*/
-.title {
+header .title {
 	margin-top: 2em;
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 	position: relative;
 }
 
-.title::after {
+header .title::after {
 	position: absolute;
 	content: "";
 	bottom: -1em;
@@ -86,7 +86,7 @@ h2 {
 }
 
 .text {
-	width: 50%;
+	width: 60%;
 	margin-top: 40px;
 	margin-bottom: 50px;
 	text-align: center;
@@ -103,10 +103,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+	width: 100%;
+	min-height: 40px
 }
 
-.mainlogo {
+.mainlogo img {
   width: 130px;
   height: 50px;
 }
@@ -154,7 +155,7 @@ header .text .title::after {
 	flex-direction: row;
 }
 
-.coloredlogo {
+.coloredlogo img{
 	margin: 20px 80px 20px 80px;
 }
 
@@ -299,7 +300,7 @@ video {
 	right: -14px;
 }
 
-.blok-works {
+/* .blok-works {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -309,8 +310,8 @@ video {
 
 .works img {
 	flex-basis: 280px;
-	flex-grow: 1;
-}
+	
+} */
 
 /*--------------------------блок people-say*/
 .people-say {
@@ -344,6 +345,7 @@ video {
 	left: 23%; top: 35%;
 	transition: all 0.5s;
 	border-radius: 50%;
+	width: 330px;
 }
 
 /*стили и позиционирование комментария*/
@@ -402,24 +404,31 @@ On click the images will be displayed at normal size to complete the effect
 
 /*--------------------------блок contact*/
 #contact {
-	flex-direction: row;
-	justify-content: center;
-	align-items: baseline;
 	color: #413d4b;
+	width: 100%;
 }
 
 #contact h2 {
-		margin-bottom: 30px; 
+	margin-bottom: 30px; 
 }
 
 .contact-form {
-	 min-width: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.contact-form-blok {
+	flex-basis: 48%;
 }
 
 .contact-form input:not([type="submit"]),
 textarea  {
 	display: block;
-	width: 75%;
+	box-sizing: border-box;
+	width: 100%;
 	padding: 15px;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -431,23 +440,21 @@ textarea  {
 
 .clients {
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
+	align-items: center;
 }
 
-.clients h2 {
+.clients .title {
 	width: 100%;
 }
 
-.clients img {
-	display: inline;
-}
-
 .clients-item {
-	width: 160px;
-	height: 75px;
-	text-align: center;
-	vertical-align: middle;
+	box-sizing: border-box;
+	width: 165px;
+	height: 100px;
 	padding: 10px;
+	text-align: center;
 }
 
 /*--------------------блок footer*/
@@ -583,3 +590,96 @@ input.subscribe-go:active {
   filter: drop-shadow(0 0 2px #fff);
 }
 
+@media only screen and (max-width: 992px) {
+	.container {
+		width: 90%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.text {
+		width: 80%;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	header .title {
+		font-size: 28px;
+	}
+	.title {
+		font-size: 19px;
+	}
+	h3 {
+		font-size: 17px;
+	}
+	#about {
+		padding: 30px 0;
+	}
+	.coloredlogo img {
+		margin: 20px 65px 20px 65px;
+		width: 200px;
+		height: auto;
+	}
+	footer {
+		text-align: center;
+	}
+	.footer-top {
+		flex-direction: column;
+	}
+	.footer-logo {
+		display: none;
+	}
+	.footer-top>div {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+			font-size: 13px;
+	}
+	.btn {
+		min-width: 100px;
+		font-size: 14px;
+	}
+	.mainlogo img{
+		width: 100px;
+		height:	auto;
+	}
+	nav {
+		width: 75%;
+	}
+	#about {
+		padding: 20px 0;
+	}
+	.coloredlogo img {
+		margin: 20px 30px 20px 30px;
+		width: 150px;
+		height: auto;
+	}
+	header .title {
+		font-size: 24px;
+	}
+	.title {
+		text-align: center;
+		font-size: 17px;
+	}
+	h3 {
+		font-size: 12px;
+	}
+	.contact-form {
+		flex-wrap: wrap;
+	}
+	.contact-form-blok {
+		text-align: center;
+		flex-basis: 100%;
+		margin-bottom: 20px;
+	}
+	.works {
+		width: 100%;
+	}
+	.slider {
+		padding-top: 530px;
+	}
+	.slider>img {
+		top: 30%;
+	}
+}
