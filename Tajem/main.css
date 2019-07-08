@@ -5,7 +5,6 @@ body {
 	line-height: 1.6em;
 	color: #f4f4f6;
 	height: 100%;
-	min-width: 700px;
 }
 
 main {
@@ -345,7 +344,7 @@ video {
 	left: 23%; top: 35%;
 	transition: all 0.5s;
 	border-radius: 50%;
-	width: 330px;
+	width: 55%;
 }
 
 /*стили и позиционирование комментария*/
@@ -634,7 +633,7 @@ input.subscribe-go:active {
 
 @media only screen and (max-width: 768px) {
 	body {
-			font-size: 13px;
+		font-size: 13px;
 	}
 	.btn {
 		min-width: 100px;
@@ -677,9 +676,18 @@ input.subscribe-go:active {
 		width: 100%;
 	}
 	.slider {
-		padding-top: 530px;
+		padding-top: 500px;
 	}
+	.slider label img {
+		width: 80px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
 	.slider>img {
-		top: 30%;
+		top: 40%;
+	}
+	.slider label img {
+		width: 60px;
 	}
 }
