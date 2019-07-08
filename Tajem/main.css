@@ -252,6 +252,7 @@ video {
 
 .person {
 	flex-basis: 300px;
+	min-height: 195px;
 	text-align: center;
 	border-bottom: 1px solid #c6c4c9;
 }
@@ -684,10 +685,37 @@ input.subscribe-go:active {
 }
 
 @media only screen and (max-width: 576px) {
+	#about .container {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
 	.slider>img {
 		top: 40%;
 	}
 	.slider label img {
 		width: 60px;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.menu {
+		flex-direction: column;
+	}
+	nav {
+		margin-top: 20px;
+		font-size: 12px;
+	}
+	.slider {
+		padding-top: 470px;
+	}
+	.slider>img {
+		top: 55%;
+	}
+	.slider label img {
+		width: 30px;
+	}
+	.clients {
+		justify-content: center;
 	}
 }
