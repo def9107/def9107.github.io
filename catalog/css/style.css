@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Helvetica Neue Cyr Medium';
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+  url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr Roman';
+  src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+  src: url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+  url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+body {
+  font-family: "Helvetica Neue Cyr - Roman";
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.catalog {
+  width: 100%;
+  min-width: 320px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1300px;
+}
+
+.catalog-block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  align-items: baseline;
+  padding: 15px 0;
+}
+
+.catalog-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 240px;
+  max-width: 266px;
+  height: 400px;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #e2e2e2;
+}
+
+.catalog-card>div {
+  padding: 10px;
+}
+
+.catalog-img {
+  height: 60%;
+}
+
+.catalog-img img {
+  height: 80%;
+  width: auto;
+}
+
+.catalog-departments {
+  color: #aeaeae;
+  font-style: bold;
+  min-height: 3.3em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.catalog-name {
+  display: block;
+  color: #2175cc;
+  min-height: 1.3em;
+}
+.catalog-order {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 41px;
+}
+
+.catalog-order__price {
+  margin-right: 10px;
+}
+
+.catalog-order__price-old {
+  color: #aeaeae;
+  text-decoration: line-through;
+}
+
+.catalog-order__price-new {
+  font-family: 'Helvetica Neue Cyr Medium';
+  color: #272727;
+  font-weight: 500;
+}
+
+.catalog-btn {
+  background-color: #ffd304;
+  border-style: none;
+  width: 153px;
+  min-height: 41px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.catalog-btn:hover {
+  background-color: #000;
+  color: #ffd304;
+  cursor: pointer;
+}
+
+.catalog-card.discount::before {
+  content: '-20%';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62px;
+  height: 32px;
+  border-bottom-right-radius: 50%;
+  background-color: #f30a2b;
+  color: #fff;
+  line-height: 2.66em;
+  text-align: center;
+  font-size: 12px;
+}
+
+.catalog-card.new::before {
+  content: 'New';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62px;
+  height: 32px;
+  border-bottom-right-radius: 50%;
+  background-color: #ffd304;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 2.66em;
+  text-align: center;
+  font-size: 12px;
+}
