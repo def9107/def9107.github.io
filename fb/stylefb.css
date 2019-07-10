@@ -1,0 +1,325 @@
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: auto;
+	min-width: 1020px;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 1.5em;
+	background-color: #eaebef;
+}
+
+h1 {
+	font-size: 35px;
+	line-height: 1.3em;
+	margin: 0;
+}
+
+a {
+	color: #37589b;
+	text-decoration: none;
+}
+
+a.info,
+p.confidency a {
+	font-size: 10px;
+	font-weight: normal;
+}
+
+
+
+/*----------центровщик-------*/
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*----------распорка---------*/
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*---------------------------------------шапка страницы--------------------------------------*/
+header {
+	background-image: linear-gradient(#4a649f, #3d5b99, #3b5999);
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+
+.logo {
+	float: left;
+}
+
+.logo p {
+	font-size: 40px;
+	margin: 0;
+	font-weight: bold;
+	margin-top: 35px;
+	margin-bottom: 10px;
+}
+
+.enter {
+	float: right;
+}
+
+.enter label {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.enter input:not([type="submit"]){
+	background-color: #faffbd;
+	border: 1px solid #1e2a5c;
+	width: 150px;
+	padding: 0;
+	padding: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.enter input[type="submit"] {
+	background-color: #4168b5;
+	border: 1px solid #29487e;
+	border-radius: 1px;
+	color: white;
+	font-weight: bold;
+	padding: 0;
+	padding: 5px;
+}
+
+.enter input[type="submit"]:hover {
+	background-color: #3d5b99;
+	cursor: pointer;
+}
+
+.enter a {
+	color: #9bb3d7;
+	margin-left: 245px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*---------------------------------------основное содержимое---------------------------------*/
+main {
+	flex: 1 0 auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+main .container {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-weight: bolder;
+	color: #333534;
+}
+
+/*---------------------блок входа в существующий аккаунт------------*/
+.choose-account {
+	min-width: 580px;
+	margin-right: 20px;
+}
+
+/*------окно добавления аккаунта-----*/
+.choose-account .account-preview {
+	display: inline-block;
+	box-sizing: content-box;
+	position: relative;
+	width: 160px;
+	height: 205px;
+	margin-right: 15px;
+	background-color: #f5f6f8;
+	border: 1px solid #dedfe3;
+	border-radius: 3px;
+}
+
+.account-preview input[type="file"] {
+	display: none;
+}
+
+/*-----иконка добавления файла------*/
+.account-preview label::before {
+	position: absolute;
+	content: url(add-icon.png);
+	display: block;
+	width: 42px;
+	height: 42px;
+	top: -95px;
+	left: 60px;
+	border-radius: 50%;
+}
+
+.account-preview label {
+	position: absolute;
+	display: inline-block;
+	width: 156px;
+	height: 30px;
+	background-color: white;
+	text-align: center;
+	bottom: 0;
+	padding: 15px 2px 2px 2px;
+}
+
+.choose-account .account-preview:hover {
+	box-shadow:  0 0 10px 2px rgba(46, 49, 49, 0.1);
+	cursor: pointer;
+}
+
+.account-preview label {
+	cursor: pointer;
+}
+
+/*---------------------блок создания нового аккаунта------------------*/
+.input-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.input-container input {
+	display: inline-block;
+	margin: 10px 0 5px 0;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #bec7d8;
+	font-size: 14px;
+}
+
+.create-new-account input:not([class="name"]) {	
+	flex-grow: 1;
+}
+
+.create-new-account input[class="name"] {
+	width: 40%;
+	margin-right: 10px;
+}
+
+input[type="date"] {
+	padding: 5px;
+	margin-right: 5px;
+}
+
+.create-new-account label {
+	display: inline-block;
+	margin: 5px 0 5px 0;
+	position: relative;
+}
+
+.create-new-account .date {
+	position: relative;
+	margin-top: 15px;
+}
+
+/*-----подсказка зачем указывать дату рождения----*/
+a.info + div {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 30px;
+	left: -165px;
+	width: 300px;
+	padding: 10px;
+	background-color: white;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.5em;
+	border: 1px solid #dedfe3;
+	border-radius: 3px;
+	box-shadow:  0 0 10px 2px rgba(46, 49, 49, 0.1);
+	color: #333534;
+	cursor: text;
+}
+
+a.info + div::after {
+	content: "";
+	z-index: 0;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	top: 10px;
+	right: -6px;
+	transform: rotate(45deg);
+	border-top: 1px solid #dedfe3;
+	border-right: 1px solid #dedfe3;
+}
+
+a.info:hover + div {
+	display: block;
+}
+
+.create-new-account input[type="submit"] {
+	position: relative;
+	width: 195px;
+	height: 40px;
+	padding: 5px 20px 5px 20px;
+	border-radius: 5px;
+	border: 1px solid #3a6e23;
+	background-color: #65a952;
+	color: white;
+	font-weight: bolder;
+	font-size: 16px;
+	box-shadow: inset 0 -30px 30px -30px #39602f;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.create-new-account input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+p.confidency {
+	color: grey;
+	font-size: 10px;
+	line-height: 1.5em;
+}
+
+.create-new-account p:last-of-type {
+	margin: 0;
+	padding-top: 15px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/*---------------------------------------подвал----------------------------------------------*/
+footer {
+flex: 0 0 auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+
+footer div {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.choose-lang {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.choose-lang input[type="button"] {
+	width: 20px;
+	height: 20px;
+	font-size: 14px;
+	padding: 0;
+	margin: 5px;
+}
+
+p.copyright {
+	opacity: 0.4;
+}
