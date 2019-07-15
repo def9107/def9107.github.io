@@ -18,6 +18,7 @@
 
 	<header>
 		<div class="overlay">
+			<div class="page-header">
 			<div class="container">
 				<div class="menu">
 					<div class="mainlogo">
@@ -37,15 +38,42 @@
 				</div>
 				<!--- menu -->
 
-				<div class="text">
+				<ul id="slides">
+				<li class="text slide showing">
 					<h1 class="title">We Are Awesome Creative Agency</h1>
+					<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+						sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed
+						odio sit amet nibh vulputate cursus a sit amet mauris. </p>
+
+					<a class="btn">LEARN MORE</a>
+					</li>
+				<!-- text -->
+
+
+				<li class="text slide">
+					<h1 class="title">This is Photoshop's version of Lorem Ipsum</h1>
+					<p>Proin gravida nibh vel velit auctor aliquet. Aenean
+						sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed
+						odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+
+					<a class="btn">WE ARE HIRING</a>
+					</li>
+				<!-- text -->
+
+
+				<li class="text slide">
+					<h1 class="title">Morbi accumsan ipsum velit</h1>
 					<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
 						sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed
 						odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
 
 					<a class="btn">LEARN MORE</a>
-				</div>
+					</li>
 				<!-- text -->
+
+			</ul>
+
+			</div>
 			</div>
 			<!-- container контейнер-центровщик -->
 		</div>
@@ -82,15 +110,20 @@
 
 		<div class="about-video">
 			<div class="overlay">
-				<video controls width="80%" height="auto" id="video" poster="images/bgcontentvideo.jpg">
-					<source src="videos/newyork.mp4" type="video/mp4">
-				</video>
+				<div id="modalVideo" class="modal">
+					<div class="modal-content">	
+						<span class="close">&times;</span>
+						<video controls width="100%" height="auto" id="video">
+							<source src="videos/newyork.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
 				<!-- блок с видео -->
 
-				<a class="btn-play-video">
+				<button class="btn-play-video" id="btnVideo">
 					<img src="images/playvideo.png">
 					<p>WATCH OUR STORY</p>
-				</a>
+				</button>
 				<!-- заставка вместо видео -->
 			</div>
 			<!--- overlay наложение фиолетового цвета на фон-->
@@ -450,7 +483,7 @@
 	</footer>
 	<!-- footer -->
 
-
+<script src="main.js"></script>
 </body>
 
 </html>
