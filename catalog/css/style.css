@@ -83,7 +83,7 @@ body {
 .catalog-name {
   display: block;
   color: #2175cc;
-  min-height: 1.3em;
+/*   min-height: 1.3em; */
 }
 .catalog-order {
   margin-top: 10px;
