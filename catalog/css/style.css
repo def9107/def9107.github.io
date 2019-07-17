@@ -75,7 +75,7 @@ body {
 .catalog-departments {
   color: #aeaeae;
   font-style: bold;
-  min-height: 3.3em;
+/*   min-height: 3.3em; */
   text-transform: uppercase;
   font-weight: 400;
 }
